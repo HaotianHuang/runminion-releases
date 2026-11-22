@@ -9,8 +9,8 @@ any time. **[runminion.com](https://runminion.com)**
 This repository only hosts the downloads and these install notes.
 
 
-This is an early preview for design partners. It isn't signed or notarised by Apple yet, so macOS
-asks you to confirm the first time you open it. That's a one-time step.
+This is an early preview for design partners. It's signed with our Apple Developer ID and
+notarised by Apple, so it installs like any other Mac app.
 
 ## 1. Download
 
@@ -30,24 +30,13 @@ Requires macOS 12 Monterey or later.
 1. Open the `.dmg` and drag **RunMinion** into **Applications**.
 2. Eject the disk image.
 
-## 3. Open it the first time
+## 3. Open it
 
-1. Open **RunMinion** from Applications. macOS says it can't verify the app — click **Done** (not
-   "Move to Trash").
-2. Open **System Settings → Privacy & Security**, scroll to the **Security** section, and click
-   **Open Anyway** next to the message about RunMinion. Confirm with your password or Touch ID.
-3. Click **Open** in the dialog that follows.
+Open **RunMinion** from Applications. The first time, macOS checks the app and asks you to
+confirm opening something downloaded from the internet. Click **Open**.
 
-After that, RunMinion opens normally.
-
-**"RunMinion is damaged and can't be opened"?** That's the same check being stricter, not real
-damage. In Terminal, run:
-
-```bash
-xattr -dr com.apple.quarantine /Applications/RunMinion.app
-```
-
-then open it again.
+(Versions before 0.1.2 weren't notarised and needed System Settings → Privacy & Security →
+**Open Anyway**. If you see that message, download the latest version.)
 
 ## 4. First run
 
@@ -68,8 +57,8 @@ then open it again.
 ## Updating
 
 There's no auto-update yet. Download the new `.dmg` and replace the app in Applications; your
-tasks, settings and sign-ins are kept. Because preview builds aren't signed, macOS may ask again
-whether RunMinion can use its Keychain item ("RunMinion Safe Storage"). Click **Always Allow**.
+tasks, settings and sign-ins are kept. If you're coming from a version before 0.1.2, macOS may ask
+once whether RunMinion can use its Keychain item ("RunMinion Safe Storage"). Click **Always Allow**.
 
 ## Where your data lives
 
