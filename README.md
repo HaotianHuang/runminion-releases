@@ -56,9 +56,15 @@ confirm opening something downloaded from the internet. Click **Open**.
 
 ## Updating
 
-There's no auto-update yet. Download the new `.dmg` and replace the app in Applications; your
-tasks, settings and sign-ins are kept. If you're coming from a version before 0.1.2, macOS may ask
-once whether RunMinion can use its Keychain item ("RunMinion Safe Storage"). Click **Always Allow**.
+From 0.1.3, RunMinion updates itself: it checks for a new version every few hours, downloads it
+in the background and installs it the next time you quit. To update right away, use **Restart to
+update** in Settings → General. You can turn automatic checks off there; they're also off in
+privacy mode. A check asks GitHub, where the downloads are hosted, for the latest version. GitHub
+sees your IP address and app version, and nothing about your tasks.
+
+On 0.1.2 or earlier, download the new `.dmg` once and replace the app in Applications; your tasks,
+settings and sign-ins are kept. Coming from before 0.1.2, macOS may ask once whether RunMinion can
+use its Keychain item ("RunMinion Safe Storage"). Click **Always Allow**.
 
 ## Where your data lives
 
